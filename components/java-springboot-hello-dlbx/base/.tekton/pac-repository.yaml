@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: my-app
+    appstudio.openshift.io/component: java-springboot-hello-dlbx
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: java-springboot-hello-dlbx
+  namespace: burrzinga-tenant
+spec:
+  url: https://github.com/burrzinga/java-springboot-hello
