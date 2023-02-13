@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-springboot-hello-dlbx
+  namespace: burrzinga-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:b4e1d177f6437ff47bd1a0cf2548ab6f624bae28096667de89a9c5bf5cc73c44
+        name: my-java-springboot
+        resources: {}
+status: {}
