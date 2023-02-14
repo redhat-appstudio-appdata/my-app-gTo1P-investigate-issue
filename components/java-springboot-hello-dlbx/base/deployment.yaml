@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: java-springboot-hello-dlbx
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload@sha256:9cca0a03f4972fcf44162147f72fd0914b758e46e1ba786751a52443e89f3d1a
+      - image: quay.io/redhat-appstudio/user-workload@sha256:843b4623408c76b62ef88c18c5f25db5b94f477ff2a2dfbb43d404929aa1f9d1
         name: my-java-springboot
         ports:
         - containerPort: 8081
